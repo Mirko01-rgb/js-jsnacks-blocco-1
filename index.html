@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+        //Generatore di "nomi cognomi" casuali: prendendo una
+        // lista di nomi e una lista di cognomi, Gatsby vuole
+        // generare una falsa lista di invitati.
+
+        var nomi = ['mirko', 'giovanni','pippo'];
+        var cognomi = ['sbaglia','dongu','scalvini'];
+        var listaFalsa = [];
+
+        var nomiLng = nomi.length;
+        var cognomiLng = cognomi.length;
+
+
+        for (var i = 0; i < nomi.length; i++) {
+          var nameRnd = nomi [Math.floor(Math.random() * nomiLng)];    // è come scrivessi nomi = [0,4,2]
+          var lastnameRnd = cognomi  [Math.floor(Math.random() * cognomiLng)];
+          listaFalsa.push(nameRnd + ' ' + lastnameRnd);
+        }
+        console.log(listaFalsa);
+
+    </script>
+
+  </body>
+</html>
