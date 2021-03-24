@@ -96,14 +96,13 @@ function thirdEx() {
 
 
 
-  // console.log(students[0]['cognome'] );     se voglio stampare solo l'indice 0 , cognome
+  // console.log(students[0]['cognome'] );           //se voglio stampare solo l'indice 0 , e la chiave cognome dell'oggetto
 
-  for (var i = 0; i < students.length; i++) {
-    console.log(students[i]['cognome']);
-
-  }
+  // for (var i = 0; i < students.length; i++) {     // per accedere a tutti gli oggetti e prendere la chiave dell'oggetto cognome
+  //   console.log(students[i]['cognome']);
+  //
+  // }
 }
-
 
 
 function init(){
