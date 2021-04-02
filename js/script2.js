@@ -6,11 +6,11 @@
 // hanno la posizione compresa tra "a" e "b"
 function splitter(min, max, array) {
   var arrayFinale = [];
-  // console.log(min , max, array);
+  //console.log(min , max, array);
   for (var i = 0; i < array.length; i++) {
      // console.log(array[i]);
      var singleNum = array[i];
-     if (singleNum > 3 && singleNum <= 7) {
+     if (singleNum >= min && singleNum <= max) {
        arrayFinale.push(singleNum)
      }
 
@@ -21,11 +21,11 @@ function splitter(min, max, array) {
 }
 function esArraySplitter() {
     var arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
-    var indMin = 3;
-    var indMax = 7;
+    var indMin = arr[3];
+    var indMax = arr[7];
     var splitted = splitter(indMin, indMax, arr);
 
-    // [ 4, 5, 6, 7 ]
+    // [ 4, 5, 6, 7, 8 ]
 }
 
 $(document).ready(esArraySplitter);
